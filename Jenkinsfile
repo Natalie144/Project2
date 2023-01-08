@@ -61,14 +61,14 @@ pipeline {
           charset: 'UTF-8', 
           mimeType: 'text/html', 
           subject: "Jenkins - build was successful", 
-          to: "tentiuc.ion@mail.ru";
+          to: "natalitar04@gmail.com";
         }
         else if(ON_FAILURE_SEND_EMAIL == "true"){
           mail body: "Project name: ${env.JOB_NAME}<br>Build number: ${env.BUILD_NUMBER}<br>Build URL: ${env.BUILD_URL}",
           charset: 'UTF-8', 
           mimeType: 'text/html', 
           subject: "Jenkins - build failed", 
-          to: "tentiuc.ion@mail.ru";
+          to: "natalitar04@gmail.com";
         }
       }
     }
